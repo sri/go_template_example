@@ -1,0 +1,33 @@
+Parsing templates...
+
+<html>
+  <head>
+    
+    
+  <title>header is included</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    
+  	
+  Count is 10
+  the Count is here
+  <h1>this is the body</h1>
+  OK, iterating thru the Names:
+  
+   
+    
+    Name: A, 10
+   
+    
+    Name: B, 10
+   
+    
+    Name: C, 10
+  
+
+  </body>
+</html>
+================================================================================
+&#34;output&#34;

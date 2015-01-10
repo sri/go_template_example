@@ -1,0 +1,17 @@
+{{define "ROOT"}}
+<html>
+  <head>
+    {{/* $ means, inside of the "Head" template, "{{.}}"
+         is bound to the argument passed into Execute. */}}
+    {{template "Head" $}}
+    {{template "Bootstrap.css"}}
+  </head>
+  <body>
+    {{/* The $ means pass into the Body template as dot '.',
+         the argument that was passed into the Execute method. */}}
+  	{{template "Body" $}}
+  </body>
+</html>
+================================================================================
+{{"put" | printf "%s%s" "out" | printf "%q"}}
+{{end}}

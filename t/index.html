@@ -1,0 +1,17 @@
+{{define "Head"}}
+  <title>header is included</title>
+{{end}}
+{{define "Body"}}
+  Count is {{.Count}}
+  {{if .Count}}the Count is here{{end}}
+  <h1>this is the body</h1>
+  OK, iterating thru the Names:
+  {{$cnt := .Count}}
+  {{range .Names}} 
+    {{/* Can't use .Count within range, as Go will try to look for
+         that in the context of {{. }}, which is string. And since
+         "test".Count doesn't exist, it will error out. But assigning
+         to a variable ($cnt) will work. */}}
+    Name: {{upper .}}, {{$cnt}}
+  {{end}}
+{{end}}
